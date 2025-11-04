@@ -17,27 +17,29 @@
       :root {
         --first-primary-color: #b796ff;
         --second-primary-color: #7a73de;
-        --three-primary-color: #9ad7ff;
+        --three-primary-color: #9afffa;
         --text-gradient: linear-gradient(
           to right,
-          white 0%,
-          white 35%,
+          #dcd6ff 0%,
+          #dcd6ff 35%,
           var(--first-primary-color) 65%,
           var(--first-primary-color) 100%
         );
         --border: 3.5px solid var(--three-primary-color);
+        --fs-h1: clamp(32px, 5vw, 72px);
+        --fs-h2: clamp(28px, 4vw, 60px);
+        --fs-text: clamp(16px, 1.2vw, 20.4px);
       }
 
       html {
-        font-size: clamp(13px, 1vw + 1rem, 22px);
         overflow-x: hidden;
+        font-size: clamp(16px, 1rem + 1vw, 30px);
       }
 
       body {
         background-color: #242230;
         font-family: "Montserrat", sans-serif;
         margin: 0;
-        font-size: clamp(16px, 1rem + 1vw, 30px);
       }
 
       button,
@@ -48,10 +50,26 @@
       ul {
         list-style: none;
         padding: 0;
+        margin: 0;
+      }
+
+      li {
+        font-size: 0.8em;
+      }
+
+      h1 {
+        font-size: var(--fs-h1);
+        font-weight: bold;
+      }
+
+      h2 {
+        font-size: var(--fs-h2);
+        font-weight: bold;
       }
 
       p {
         margin: 0;
+        font-size: var(--fs-text);
       }
     </style>
   </head>
@@ -185,30 +203,30 @@
         <h2 class="guideline-for-user_title">Using quideline for user</h2>
 
         <div class="guideline-for-user_instruction">
-          <ul class="instruction_buttons-list">
+          <ul class="instruction_buttons-list first-column">
             <li class="buttons-list_button">
               <p class="button_text">Switch Key / Return Home</p>
-              <div class="button_line" id="one"></div>
+              <div class="line" id="one"></div>
             </li>
 
             <li class="buttons-list_button">
               <p class="button_text">Return</p>
-              <div class="button_line"></div>
+              <div class="line" id="two"></div>
             </li>
 
             <li class="buttons-list_button">
               <p class="button_text">Movement</p>
-              <div class="button_line"></div>
+              <div class="line" id="three"></div>
             </li>
 
             <li class="buttons-list_button">
               <p class="button_text">Slip Drive</p>
-              <div class="button_line"></div>
+              <div class="line" id="four"></div>
             </li>
 
             <li class="buttons-list_button">
               <p class="button_text">Aim</p>
-              <div class="button_line"></div>
+              <div class="line" id="five"></div>
             </li>
           </ul>
 
@@ -221,18 +239,27 @@
           <ul class="instruction_buttons-list second-column">
             <li class="buttons-list_button">
               <p class="button_text">Start</p>
+              <div class="line" id="six"></div>
             </li>
+
             <li class="buttons-list_button">
               <p class="button_text">Body Sensor Tracking</p>
+              <div class="line" id="seven"></div>
             </li>
+
             <li class="buttons-list_button">
               <p class="button_text">Install Delete Game</p>
+              <div class="line" id="eight"></div>
             </li>
+
             <li class="buttons-list_button">
               <p class="button_text">Back</p>
+              <div class="line" id="nine"></div>
             </li>
+
             <li class="buttons-list_button">
               <p class="button_text">Confirm</p>
+              <div class="line" id="ten"></div>
             </li>
           </ul>
         </div>
@@ -278,7 +305,7 @@
 
           <div class="text-content_text">
             <p class="text-content_subtitle">XB Shop Exclusive</p>
-            <h3 class="text-content_title">Sale by XB Shop</h3>
+            <h2 class="text-content_title">Sale by XB Shop</h2>
             <p class="text-content_description">ALL PRICES UP TO -45% OFF</p>
             <a class="text-content_navigate-to-prod-list">SHOP NOW</a>
           </div>

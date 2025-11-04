@@ -5,7 +5,6 @@ header {
 
 .header_content {
     width: 83vw;
-    min-width: 420px;
     height: 12vh;
     margin: 0 auto;
     display: flex;
@@ -27,11 +26,11 @@ header {
 
 .header_content .content_navigate {
     width: 33%;
+    max-width: 520px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: white;
-    font-size: 15px;
 }
 
 .header_content .content_navigate p {
@@ -43,6 +42,7 @@ header {
     align-items: center;
     justify-content: space-between;
     width: 20%;
+    max-width: 250px;
 }
 
 .header_content .content_actions .actions_action {
