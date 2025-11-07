@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/adaptive.css" />
+    <link rel="stylesheet" href="styles/footer_adaptive.css" />
+    <link rel="stylesheet" href="styles/header_adaptive.css" />
     <title>XB Shop</title>
     <style>
       :root {
@@ -25,14 +28,13 @@
           var(--first-primary-color) 65%,
           var(--first-primary-color) 100%
         );
-        --border: 3.5px solid var(--three-primary-color);
+        --border: 2px solid var(--three-primary-color);
         --fs-h1: clamp(32px, 5vw, 72px);
         --fs-h2: clamp(28px, 4vw, 60px);
         --fs-text: clamp(16px, 1.2vw, 20.4px);
       }
 
       html {
-        overflow-x: hidden;
         font-size: clamp(16px, 1rem + 1vw, 30px);
       }
 
@@ -40,6 +42,7 @@
         background-color: #242230;
         font-family: "Montserrat", sans-serif;
         margin: 0;
+        overflow-x: hidden;
       }
 
       button,
@@ -51,10 +54,6 @@
         list-style: none;
         padding: 0;
         margin: 0;
-      }
-
-      li {
-        font-size: 0.8em;
       }
 
       h1 {
@@ -69,7 +68,9 @@
 
       p {
         margin: 0;
+        line-height: 1.5;
         font-size: var(--fs-text);
+        font-weight: 300;
       }
     </style>
   </head>
@@ -98,6 +99,10 @@
             class="actions_action"
           />
           <button class="actions_sign-up">sign up</button>
+        </div>
+
+        <div class="content_menu-burger">
+          <span></span><span></span><span></span>
         </div>
       </div>
     </header>
@@ -206,60 +211,94 @@
           <ul class="instruction_buttons-list first-column">
             <li class="buttons-list_button">
               <p class="button_text">Switch Key / Return Home</p>
-              <div class="line" id="one"></div>
+              <div
+                class="line"
+                data-x="32vw"
+                data-h="12.7vh"
+                line_bottom_left
+              ></div>
             </li>
 
             <li class="buttons-list_button">
               <p class="button_text">Return</p>
-              <div class="line" id="two"></div>
+              <div
+                class="line"
+                data-x="29.3vw"
+                data-h="7vh"
+                line_bottom_left
+              ></div>
             </li>
 
             <li class="buttons-list_button">
               <p class="button_text">Movement</p>
-              <div class="line" id="three"></div>
+              <div
+                class="line"
+                data-x="21.5vw"
+                data-h="2vh"
+                line_top_left
+              ></div>
             </li>
 
             <li class="buttons-list_button">
               <p class="button_text">Slip Drive</p>
-              <div class="line" id="four"></div>
+              <div class="line" data-x="25vw" straight_line></div>
             </li>
 
             <li class="buttons-list_button">
               <p class="button_text">Aim</p>
-              <div class="line" id="five"></div>
+              <div class="line" data-x="37vw" data-h="9vh" line_top_left></div>
             </li>
           </ul>
 
           <img
             src="imgs/product-photo.png"
-            alt="game controller"
             class="instruction_game-controller-photo"
           />
 
           <ul class="instruction_buttons-list second-column">
             <li class="buttons-list_button">
               <p class="button_text">Start</p>
-              <div class="line" id="six"></div>
+              <div
+                class="line"
+                data-x="29.2vw"
+                data-h="19vh"
+                line_bottom_right
+              ></div>
             </li>
 
             <li class="buttons-list_button">
               <p class="button_text">Body Sensor Tracking</p>
-              <div class="line" id="seven"></div>
+              <div
+                class="line"
+                data-x="22vw"
+                data-h="6.87vh"
+                line_bottom_right
+              ></div>
             </li>
 
             <li class="buttons-list_button">
               <p class="button_text">Install Delete Game</p>
-              <div class="line" id="eight"></div>
+              <div class="line" data-x="25vw" straight_line></div>
             </li>
 
             <li class="buttons-list_button">
               <p class="button_text">Back</p>
-              <div class="line" id="nine"></div>
+              <div
+                class="line"
+                data-x="19.5vw"
+                data-h="8.7vh"
+                line_top_rigth
+              ></div>
             </li>
 
             <li class="buttons-list_button">
               <p class="button_text">Confirm</p>
-              <div class="line" id="ten"></div>
+              <div
+                class="line"
+                data-x="22vw"
+                data-h="13vh"
+                line_top_rigth
+              ></div>
             </li>
           </ul>
         </div>
@@ -412,5 +451,13 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      document.querySelectorAll(".line").forEach((el) => {
+        if (el.dataset.x) el.style.setProperty("--x", el.dataset.x);
+        if (el.dataset.h) el.style.setProperty("--h", el.dataset.h);
+        if (el.dataset.y) el.style.setProperty("--y", el.dataset.y);
+      });
+    </script>
   </body>
 </html>

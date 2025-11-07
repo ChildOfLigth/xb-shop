@@ -1,65 +1,83 @@
 header {
-    position: sticky;
-    z-index: 1000;
+  position: sticky;
+  z-index: 1000;
 }
 
 .header_content {
-    width: 83vw;
-    height: 12vh;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+  width: 83vw;
+  height: 12vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header_content .content_logo {
-    width: 24%;
-    font-size: 24px;
-    font-weight: 500;
-    color: white;
+  width: 24%;
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
 }
 
 .header_content .content_logo span {
-    color: var(--second-primary-color);
+  color: var(--second-primary-color);
 }
 
 .header_content .content_navigate {
-    width: 33%;
-    max-width: 520px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: white;
+  width: 33%;
+  max-width: 520px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
 }
 
 .header_content .content_navigate p {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .header_content .content_actions {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 20%;
-    max-width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 20%;
+  max-width: 250px;
 }
 
 .header_content .content_actions .actions_action {
-    width: 18px;
-    height: 18px;
-    filter: invert(1);
-    cursor: pointer;
+  width: 18px;
+  height: 18px;
+  filter: invert(1);
+  cursor: pointer;
 }
 
 .header_content .content_actions .actions_sign-up {
-    width: 55%;
-    padding: 15px 0;
-    color: white;
-    text-transform: uppercase;
-    background: linear-gradient(to right,
-            var(--second-primary-color) 0%,
-            var(--first-primary-color) 100%);
-    border-radius: 40px;
-    border: none;
+  width: 55%;
+  padding: 15px 0;
+  color: white;
+  text-transform: uppercase;
+  background: linear-gradient(
+    to right,
+    var(--second-primary-color) 0%,
+    var(--first-primary-color) 100%
+  );
+  border-radius: 40px;
+  border: none;
+}
+
+.header_content .content_menu-burger {
+  width: 10%;
+  min-width: 45px;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.header_content .content_menu-burger span {
+  width: 100%;
+  height: 2px;
+  display: block;
+  background-color: white;
 }

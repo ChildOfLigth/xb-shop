@@ -1,0 +1,352 @@
+@media (max-width: 1744px) {
+  main {
+    .main_present-block {
+      .present-block_text-content {
+        width: 37%;
+      }
+
+      .present-block_decorate-img {
+        .decorate-img_back-part {
+          .back-part_text {
+            font-size: 4.5em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1698px) {
+  main {
+    .main_present-block {
+      .present-block_decorate-img {
+        .decorate-img_front-part {
+          .front-part_decorate-text {
+            #first {
+              left: -4.5em;
+            }
+
+            #second {
+              top: 6.3em;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1500px) {
+  main {
+    .main_present-block {
+      .present-block_decorate-img {
+        .decorate-img_front-part {
+          .front-part_decorate-text {
+            .decorate-text_text {
+              p {
+                width: 24%;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .main_about-our-quality {
+      gap: 5em;
+
+      .about-our-quality_text-content {
+        width: 45%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1374px) {
+  main {
+    .main_present-block {
+      width: 90%;
+      .present-block_text-content {
+        width: 38%;
+        .text-content_actions {
+          .actions_navigate-prod-page {
+            width: 50%;
+            padding: 1em;
+          }
+        }
+      }
+
+      .present-block_decorate-img {
+        .decorate-img_front-part {
+          .front-part_product-photo {
+            width: 90%;
+          }
+
+          .front-part_decorate-text {
+            #first {
+              top: 2.5em;
+            }
+
+            #second {
+              left: 2.35em;
+              top: 5.5em;
+            }
+          }
+        }
+      }
+    }
+
+    .main_about-our-quality {
+      .about-our-quality_text-content {
+        .text-content_list-of-qualities {
+          .list-of-qualities_quality {
+            font-size: 0.6em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1110px) {
+  main {
+    .main_present-block {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 2em;
+      padding-top: 1.5em;
+
+      .present-block_text-content {
+        width: 85%;
+
+        .text-content_actions {
+          width: 60%;
+        }
+      }
+
+      .present-block_decorate-img {
+        width: 55%;
+
+        .decorate-img_front-part {
+          .front-part_product-photo {
+            width: 99%;
+          }
+
+          .front-part_decorate-text {
+            p {
+              width: 40%;
+            }
+
+            #first {
+              top: 3em;
+              left: -4.5em;
+            }
+
+            #second {
+              left: 2.2em;
+              top: 5.8em;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1030px) {
+  main {
+    .main_about-our-quality {
+      width: 90%;
+      gap: 3em;
+
+      .decorate-for-qual-block {
+        width: 45%;
+      }
+
+      .about-our-quality_text-content {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media (max-width: 918px) {
+  main {
+    .main_about-our-quality {
+      justify-content: right;
+
+      .decorate-for-qual-block {
+        position: absolute;
+        left: -6em;
+        width: 55%;
+      }
+
+      .about-our-quality_text-content {
+        width: 60%;
+      }
+    }
+  }
+}
+
+@media (max-width: 840px) {
+  main {
+    .main_present-block {
+      .present-block_text-content {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        width: 90%;
+
+        .text-content_actions {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 25px;
+
+          .actions_how-to-use {
+            width: 40%;
+            min-width: 126px;
+          }
+        }
+      }
+
+      .present-block_decorate-img {
+        .decorate-img_front-part {
+          .front-part_decorate-text {
+            #first {
+              top: 2em;
+            }
+
+            #second {
+              left: 2em;
+              top: 5.2em;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 710px) {
+  main {
+    .main_present-block {
+      padding: 1.8em 0;
+      gap: 1em;
+
+      .present-block_decorate-img {
+        width: 65%;
+
+        .decorate-img_front-part {
+          .front-part_decorate-text {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .main_about-our-quality {
+      justify-content: center;
+
+      .about-our-quality_text-content {
+        width: 80%;
+      }
+
+      .decorate-for-qual-block {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 690px) {
+  main {
+    .main_present-block {
+      .present-block_text-content {
+        .text-content_actions {
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  main {
+    .main_present-block {
+      gap: 0;
+
+      .present-block_text-content {
+        width: 100%;
+        gap: 20px;
+
+        .text-content_actions {
+          width: 85%;
+
+          .actions_how-to-use {
+            .how-to-use_desc {
+              font-size: 10px;
+            }
+          }
+        }
+      }
+
+      .present-block_decorate-img {
+        width: 80%;
+
+        .decorate-img_back-part {
+          .back-part_circle {
+            width: 35%;
+            top: -0.5em;
+          }
+        }
+
+        .decorate-img_front-part {
+          .front-part_product-photo {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .main_about-our-quality {
+      gap: 0;
+      justify-content: center;
+      margin: 0 auto;
+
+      .about-our-quality_text-content {
+        width: 85%;
+
+        .text-content_list-of-qualities {
+          .list-of-qualities_quality {
+            font-size: 0.8em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 406px) {
+  main {
+    .main_present-block {
+      .present-block_text-content {
+        .text-content_title {
+          font-size: 26px;
+        }
+
+        .text-content_desc {
+          width: 100%;
+        }
+      }
+
+      .present-block_decorate-img {
+        .decorate-img_back-part {
+          .back-part_text {
+            font-size: 3.5em;
+          }
+        }
+      }
+    }
+  }
+}
