@@ -16,6 +16,20 @@
   }
 }
 
+@media (max-width: 1726px) {
+  main {
+    .main_promo-banner {
+      .promo-banner_text-content {
+        .promo-banner_border-for-text-block {
+          #bottom_right {
+            z-index: 10;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 1698px) {
   main {
     .main_present-block {
@@ -31,6 +45,28 @@
             }
           }
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 1600px) {
+  main {
+    .main_promo-banner {
+      padding: 3.5em 0;
+
+      .promo-banner_decorate-img {
+        width: 58%;
+      }
+
+      #left {
+        position: absolute;
+        left: -14.5em;
+      }
+
+      #rigth {
+        position: absolute;
+        right: -14.5em;
       }
     }
   }
@@ -105,6 +141,38 @@
         }
       }
     }
+
+    .main_promo-banner {
+      .promo-banner_text-content {
+        padding: calc(3.5em / 2 * 1.5) 0;
+      }
+
+      #left {
+        position: absolute;
+        left: -14.5em;
+      }
+
+      #rigth {
+        position: absolute;
+        right: -14.5em;
+      }
+    }
+  }
+}
+
+@media (max-width: 1140px) {
+  main {
+    .main_promo-banner {
+      #left {
+        position: absolute;
+        left: -13em;
+      }
+
+      #rigth {
+        position: absolute;
+        right: -13em;
+      }
+    }
   }
 }
 
@@ -167,6 +235,12 @@
         width: 50%;
       }
     }
+
+    .main_promo-banner {
+      .promo-banner_decorate-img {
+        width: 62%;
+      }
+    }
   }
 }
 
@@ -225,6 +299,20 @@
         }
       }
     }
+
+    .main_promo-banner {
+      padding-top: 1em;
+      #rigth {
+        display: none;
+      }
+
+      #left {
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 10em;
+      }
+    }
   }
 }
 
@@ -266,6 +354,16 @@
         .text-content_actions {
           width: 80%;
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 590px) {
+  main {
+    .main_promo-banner {
+      #left {
+        width: 95%;
       }
     }
   }
@@ -324,6 +422,28 @@
         }
       }
     }
+
+    .main_promo-banner {
+      .promo-banner_text-content {
+        .text-content_description {
+          font-size: 0.8em;
+        }
+
+        .text-content_navigate-to-prod-list {
+          margin-top: 0.5em;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 488px) {
+  main {
+    .main_promo-banner {
+      .promo-banner_text-content {
+        
+      }
+    }
   }
 }
 
@@ -348,6 +468,13 @@
         }
       }
     }
+
+    .main_promo-banner {
+      .promo-banner_text-content {
+        .text-content_description {
+          font-size: 0.6em;
+        }
+      }
+    }
   }
 }
-

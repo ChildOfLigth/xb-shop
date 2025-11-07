@@ -6,12 +6,33 @@
     font-size: 4.5em;
   }
 }
+@media (max-width: 1726px) {
+  main .main_promo-banner .promo-banner_text-content .promo-banner_border-for-text-block #bottom_right {
+    z-index: 10;
+  }
+}
 @media (max-width: 1698px) {
   main .main_present-block .present-block_decorate-img .decorate-img_front-part .front-part_decorate-text #first {
     left: -4.5em;
   }
   main .main_present-block .present-block_decorate-img .decorate-img_front-part .front-part_decorate-text #second {
     top: 6.3em;
+  }
+}
+@media (max-width: 1600px) {
+  main .main_promo-banner {
+    padding: 3.5em 0;
+  }
+  main .main_promo-banner .promo-banner_decorate-img {
+    width: 58%;
+  }
+  main .main_promo-banner #left {
+    position: absolute;
+    left: -14.5em;
+  }
+  main .main_promo-banner #rigth {
+    position: absolute;
+    right: -14.5em;
   }
 }
 @media (max-width: 1500px) {
@@ -48,6 +69,27 @@
   }
   main .main_about-our-quality .about-our-quality_text-content .text-content_list-of-qualities .list-of-qualities_quality {
     font-size: 0.6em;
+  }
+  main .main_promo-banner .promo-banner_text-content {
+    padding: 2.625em 0;
+  }
+  main .main_promo-banner #left {
+    position: absolute;
+    left: -14.5em;
+  }
+  main .main_promo-banner #rigth {
+    position: absolute;
+    right: -14.5em;
+  }
+}
+@media (max-width: 1140px) {
+  main .main_promo-banner #left {
+    position: absolute;
+    left: -13em;
+  }
+  main .main_promo-banner #rigth {
+    position: absolute;
+    right: -13em;
   }
 }
 @media (max-width: 1110px) {
@@ -96,6 +138,9 @@
   }
   main .main_about-our-quality .about-our-quality_text-content {
     width: 50%;
+  }
+  main .main_promo-banner .promo-banner_decorate-img {
+    width: 62%;
   }
 }
 @media (max-width: 918px) {
@@ -147,6 +192,19 @@
     left: 2em;
     top: 5.2em;
   }
+  main .main_promo-banner {
+    padding-top: 1em;
+  }
+  main .main_promo-banner #rigth {
+    display: none;
+  }
+  main .main_promo-banner #left {
+    width: 80%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    top: 10em;
+  }
 }
 @media (max-width: 710px) {
   main .main_present-block {
@@ -174,6 +232,11 @@
 @media (max-width: 690px) {
   main .main_present-block .present-block_text-content .text-content_actions {
     width: 80%;
+  }
+}
+@media (max-width: 590px) {
+  main .main_promo-banner #left {
+    width: 95%;
   }
 }
 @media (max-width: 576px) {
@@ -213,6 +276,12 @@
   main .main_about-our-quality .about-our-quality_text-content .text-content_list-of-qualities .list-of-qualities_quality {
     font-size: 0.8em;
   }
+  main .main_promo-banner .promo-banner_text-content .text-content_description {
+    font-size: 0.8em;
+  }
+  main .main_promo-banner .promo-banner_text-content .text-content_navigate-to-prod-list {
+    margin-top: 0.5em;
+  }
 }
 @media (max-width: 406px) {
   main .main_present-block .present-block_text-content .text-content_title {
@@ -223,5 +292,8 @@
   }
   main .main_present-block .present-block_decorate-img .decorate-img_back-part .back-part_text {
     font-size: 3.5em;
+  }
+  main .main_promo-banner .promo-banner_text-content .text-content_description {
+    font-size: 0.6em;
   }
 }

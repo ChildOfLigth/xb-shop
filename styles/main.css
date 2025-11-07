@@ -342,6 +342,7 @@ main
   align-items: center;
   justify-content: center;
   border: none;
+  background-color: white;
 }
 
 .main_swiper .swiper_swipe-slide img {
@@ -604,7 +605,7 @@ main .second-column .buttons-list_button .line {
 }
 
 .buttons-list_button .line[straight_line]::after {
-  top: -7px
+  top: -7px;
 }
 
 .first-column .buttons-list_button .line::after {
@@ -618,8 +619,8 @@ main .second-column .buttons-list_button .line {
 main .main_promo-banner {
   position: relative;
   width: 100%;
-  height: 67vh;
-  padding: 90px 0;
+  height: auto;
+  padding: 4.5em 0;
   margin: 6rem 0;
   display: flex;
   align-items: center;
@@ -633,17 +634,16 @@ main .main_promo-banner {
 }
 
 main .main_promo-banner .promo-banner_decorate-img {
+  position: absolute;
   width: 55%;
   z-index: 100;
 }
 
 main .main_promo-banner #left {
-  position: absolute;
   left: -17.3em;
 }
 
 main .main_promo-banner #rigth {
-  position: absolute;
   right: -17.3em;
 }
 
@@ -654,7 +654,7 @@ main .main_promo-banner .promo-banner_text-content {
   width: 82%;
   height: 58%;
   border-radius: 60px;
-  padding: 70px 0;
+  padding: calc(6.5em / 2 * 1.5) 0;
 }
 
 main .main_promo-banner .promo-banner_text-content .text-content_text {
@@ -663,7 +663,7 @@ main .main_promo-banner .promo-banner_text-content .text-content_text {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 27px;
+  gap: 1em;
   color: white;
   z-index: 100;
 }
@@ -687,11 +687,12 @@ main
   .main_promo-banner
   .promo-banner_text-content
   .text-content_navigate-to-prod-list {
+  margin-top: 1.5em;
   color: #242230;
-  font-size: 0.5em;
+  font-size: 0.55em;
   font-weight: 600;
   background-color: white;
-  padding: 13px 25px;
+  padding: 1.2em 2.4em;
   border-radius: 30px;
 }
 
@@ -715,8 +716,8 @@ main
   left: 0;
   width: 50%;
   height: 80%;
-  border-top: var(--border);
-  border-left: var(--border);
+  border-top: 4px solid var(--three-primary-color);
+  border-left: 4px solid var(--three-primary-color);
   border-top-left-radius: 60px;
   z-index: 100;
 }
@@ -726,8 +727,8 @@ main
   right: 0;
   width: 50%;
   height: 80%;
-  border-top: var(--border);
-  border-right: var(--border);
+  border-top: 4px solid var(--three-primary-color);
+  border-right: 4px solid var(--three-primary-color);
   border-top-right-radius: 60px;
 }
 
@@ -736,8 +737,8 @@ main
   left: 0;
   width: 50%;
   height: 50%;
-  border-left: var(--border);
-  border-bottom: var(--border);
+  border-left: 4px solid var(--three-primary-color);
+  border-bottom: 4px solid var(--three-primary-color);
   border-bottom-left-radius: 60px;
 }
 
@@ -746,8 +747,8 @@ main
   right: 0;
   width: 50%;
   height: 31.5%;
-  border-bottom: var(--border);
-  border-right: var(--border);
+  border-bottom: 4px solid var(--three-primary-color);
+  border-right: 4px solid var(--three-primary-color);
   border-bottom-right-radius: 60px;
   z-index: 1000;
 }
