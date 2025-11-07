@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -32,6 +33,22 @@
         --fs-h1: clamp(32px, 5vw, 72px);
         --fs-h2: clamp(28px, 4vw, 60px);
         --fs-text: clamp(16px, 1.2vw, 20.4px);
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --first-primary-color: #b796ff;
+          --second-primary-color: #7a73de;
+          --three-primary-color: #9afffa;
+          --text-gradient: linear-gradient(
+            to right,
+            #dcd6ff 0%,
+            #dcd6ff 35%,
+            var(--first-primary-color) 65%,
+            var(--first-primary-color) 100%
+          );
+          --border: 2px solid var(--three-primary-color);
+        }
       }
 
       html {
