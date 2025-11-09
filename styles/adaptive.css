@@ -5,6 +5,18 @@
   main .main_present-block .present-block_decorate-img .decorate-img_back-part .back-part_text {
     font-size: 4.5em;
   }
+  main .main_guideline-for-user .guideline-for-user_instruction .first-column .buttons-list_button .line:nth-child(0) {
+    min-height: 120px;
+  }
+  main .main_guideline-for-user .guideline-for-user_instruction .first-column .buttons-list_button .line:nth-child(1) {
+    min-height: 75px;
+  }
+  main .main_guideline-for-user .guideline-for-user_instruction .first-column .buttons-list_button .line:nth-child(3) {
+    min-height: 28px;
+  }
+  main .main_guideline-for-user .guideline-for-user_instruction .first-column .buttons-list_button .line:nth-child(5) {
+    min-height: 85px;
+  }
 }
 @media (max-width: 1726px) {
   main .main_promo-banner .promo-banner_text-content .promo-banner_border-for-text-block #bottom_right {
