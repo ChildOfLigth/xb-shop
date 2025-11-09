@@ -231,7 +231,7 @@
               <div
                 class="line"
                 data-x="32vw"
-                data-h="12.7vh"
+                data-h="14vh"
                 line_bottom_left
               ></div>
             </li>
@@ -241,7 +241,7 @@
               <div
                 class="line"
                 data-x="29.3vw"
-                data-h="7vh"
+                data-h="10vh"
                 line_bottom_left
               ></div>
             </li>
@@ -278,7 +278,7 @@
               <div
                 class="line"
                 data-x="29.2vw"
-                data-h="19vh"
+                data-h="23vh"
                 line_bottom_right
               ></div>
             </li>
@@ -303,7 +303,7 @@
               <div
                 class="line"
                 data-x="19.5vw"
-                data-h="8.7vh"
+                data-h="12vh"
                 line_top_rigth
               ></div>
             </li>
@@ -313,7 +313,7 @@
               <div
                 class="line"
                 data-x="22vw"
-                data-h="13vh"
+                data-h="16vh"
                 line_top_rigth
               ></div>
             </li>
@@ -412,35 +412,35 @@
           </section>
 
           <nav class="footer_navigate">
-            <ul class="navigate_links">
+            <div class="navigate_links">
               <h5 class="links_title-list">Customer Service</h5>
-              <div class="links_items">
+              <ul class="links_items">
                 <li class="items_item"><a href="#">Track your Order</a></li>
                 <li class="items_item"><a href="#">Shipping</a></li>
                 <li class="items_item"><a href="#">Returns & Exchanges</a></li>
                 <li class="items_item"><a href="#">Gift Cards</a></li>
-              </div>
-            </ul>
+              </ul>
+            </div>
 
-            <ul class="navigate_links">
+            <div class="navigate_links">
               <h5 class="links_title-list">Resources</h5>
-              <div class="links_items">
+              <ul class="links_items">
                 <li class="items_item"><a href="#">Find Your Size</a></li>
                 <li class="items_item"><a href="#">Handling & Care</a></li>
                 <li class="items_item"><a href="#">Face Shapes</a></li>
                 <li class="items_item"><a href="#">Blogs</a></li>
-              </div>
-            </ul>
+              </ul>
+            </div>
 
-            <ul class="navigate_links">
+            <div class="navigate_links">
               <h5 class="links_title-list">Support</h5>
-              <div class="links_items">
+              <ul class="links_items">
                 <li class="items_item"><a href="#">Terms of Service</a></li>
                 <li class="items_item"><a href="#">Privacy Policy</a></li>
                 <li class="items_item"><a href="#">Contact Us</a></li>
                 <li class="items_item"><a href="#">FAQs</a></li>
-              </div>
-            </ul>
+              </ul>
+            </div>
           </nav>
         </div>
 
@@ -473,7 +473,6 @@
       document.querySelectorAll(".line").forEach((el) => {
         if (el.dataset.x) el.style.setProperty("--x", el.dataset.x);
         if (el.dataset.h) el.style.setProperty("--h", el.dataset.h);
-        if (el.dataset.y) el.style.setProperty("--y", el.dataset.y);
       });
     </script>
   </body>
