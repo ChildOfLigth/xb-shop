@@ -20,12 +20,15 @@
       .buttons-list_button:nth-child(1) .line {
         min-height: 120px;
       }
+
       .buttons-list_button:nth-child(2) .line {
         min-height: 75px;
       }
+
       .buttons-list_button:nth-child(3) .line {
         min-height: 42px;
       }
+
       .buttons-list_button:nth-child(5) .line {
         --h: 100px !important;
       }
@@ -35,9 +38,11 @@
       .buttons-list_button:nth-child(3) .line {
         top: 15%;
       }
+
       .buttons-list_button:nth-child(4) .line {
         --h: 110px !important;
       }
+
       .buttons-list_button:nth-child(5) .line {
         --h: 164px !important;
       }
@@ -63,6 +68,7 @@
   main {
     .main_guideline-for-user {
       width: 88%;
+
       .guideline-for-user_instruction {
         .instruction_buttons-list {
           .buttons-list_button {
@@ -130,9 +136,11 @@
           .buttons-list_button:nth-child(2) .line {
             min-height: 66px;
           }
+
           .buttons-list_button:nth-child(4) .line {
             --x: 27vw !important;
           }
+
           .buttons-list_button:nth-child(5) .line {
             --x: 38vw !important;
           }
@@ -150,10 +158,12 @@
           .buttons-list_button:nth-child(3) .line {
             top: 20%;
           }
+
           .buttons-list_button:nth-child(4) .line {
             min-height: 105px;
             top: calc((105px - 50%) * -1);
           }
+
           .buttons-list_button:nth-child(5) .line {
             top: calc((150px - 50%) * -1);
             min-height: 150px !important;
@@ -388,6 +398,7 @@
 
     .main_guideline-for-user {
       width: 90%;
+
       .guideline-for-user_instruction {
         .instruction_game-controller-photo {
           width: 57%;
@@ -397,6 +408,7 @@
           .buttons-list_button .line {
             left: 55%;
           }
+
           .buttons-list_button:nth-child(1) .line {
             min-height: 88px;
           }
@@ -418,6 +430,63 @@
     .main_promo-banner {
       .promo-banner_decorate-img {
         width: 62%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  main {
+    .main_guideline-for-user {
+      .guideline-for-user_title {
+        margin-bottom: 1em;
+      }
+
+      .guideline-for-user_instruction {
+        .instruction_buttons-list {
+          display: none;
+        }
+
+        .instruction_game-controller-photo {
+          display: none;
+        }
+
+        .instruction_game-controller-photo {
+          display: none;
+        }
+
+        .instruction_smallScreen-version {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+
+          .smallScreen-version_buttons-lists {
+            display: flex;
+            align-items: start;
+            justify-content: left;
+            gap: 3em;
+
+            .buttons-lists_buttons-list {
+              width: 45%;
+              display: flex;
+              flex-direction: column;
+              gap: 1em;
+              justify-content: start;
+
+              .buttons-list_button {
+                font-size: 0.7em;
+                color: white;
+                text-align: left;
+              }
+            }
+          }
+
+          .smallScreen-version_game-controller-photo {
+            width: 80%;
+          }
+        }
       }
     }
   }
@@ -617,10 +686,64 @@
   }
 }
 
+@media (max-width: 500px) {
+  main {
+    .main_guideline-for-user {
+      .guideline-for-user_instruction {
+        .instruction_smallScreen-version {
+          .smallScreen-version_buttons-lists {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .buttons-lists_buttons-list {
+              width: 50%;
+
+              .buttons-list_button {
+                font-size: 0.6em;
+
+              }
+            }
+          }
+
+          .smallScreen-version_game-controller-photo {
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 488px) {
   main {
     .main_promo-banner {
-      .promo-banner_text-content {
+      .promo-banner_text-content {}
+    }
+  }
+}
+
+@media (max-width: 453px) {
+  main {
+    .main_guideline-for-user {
+      .guideline-for-user_instruction {
+        .instruction_smallScreen-version {
+          .smallScreen-version_buttons-lists {
+            .buttons-lists_buttons-list {
+              width: 50%;
+
+              .buttons-list_button {
+                font-size: 0.6em;
+
+              }
+            }
+          }
+
+          .smallScreen-version_game-controller-photo {
+            width: 90%;
+            margin-bottom: 20px;
+          }
+        }
       }
     }
   }
@@ -653,6 +776,16 @@
         .text-content_description {
           font-size: 0.6em;
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  main {
+    .main_guideline-for-user {
+      .guideline-for-user_title {
+        text-align: center;
       }
     }
   }

@@ -245,6 +245,70 @@
     width: 62%;
   }
 }
+@media (max-width: 1000px) {
+  main .main_guideline-for-user .guideline-for-user_title {
+    margin-bottom: 1em;
+  }
+  main .main_guideline-for-user .guideline-for-user_instruction .instruction_buttons-list {
+    display: none;
+  }
+  main .main_guideline-for-user .guideline-for-user_instruction .instruction_game-controller-photo {
+    display: none;
+  }
+  main .main_guideline-for-user .guideline-for-user_instruction .instruction_game-controller-photo {
+    display: none;
+  }
+  main .main_guideline-for-user .guideline-for-user_instruction .instruction_smallScreen-version {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .main_guideline-for-user .guideline-for-user_instruction .instruction_smallScreen-version .smallScreen-version_buttons-lists {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    gap: 3em;
+  }
+  main .main_guideline-for-user .guideline-for-user_instruction .instruction_smallScreen-version .smallScreen-version_buttons-lists .buttons-lists_buttons-list {
+    width: 45%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1em;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  main .main_guideline-for-user .guideline-for-user_instruction .instruction_smallScreen-version .smallScreen-version_buttons-lists .buttons-lists_buttons-list .buttons-list_button {
+    font-size: 0.7em;
+    color: white;
+    text-align: left;
+  }
+  main .main_guideline-for-user .guideline-for-user_instruction .instruction_smallScreen-version .smallScreen-version_game-controller-photo {
+    width: 80%;
+  }
+}
 @media (max-width: 918px) {
   main .main_about-our-quality {
     -webkit-box-pack: right;
@@ -385,6 +449,40 @@
     margin-top: 0.5em;
   }
 }
+@media (max-width: 500px) {
+  main .main_guideline-for-user .guideline-for-user_instruction .instruction_smallScreen-version .smallScreen-version_buttons-lists {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .main_guideline-for-user .guideline-for-user_instruction .instruction_smallScreen-version .smallScreen-version_buttons-lists .buttons-lists_buttons-list {
+    width: 50%;
+  }
+  main .main_guideline-for-user .guideline-for-user_instruction .instruction_smallScreen-version .smallScreen-version_buttons-lists .buttons-lists_buttons-list .buttons-list_button {
+    font-size: 0.6em;
+  }
+  main .main_guideline-for-user .guideline-for-user_instruction .instruction_smallScreen-version .smallScreen-version_game-controller-photo {
+    width: 90%;
+  }
+}
+@media (max-width: 453px) {
+  main .main_guideline-for-user .guideline-for-user_instruction .instruction_smallScreen-version .smallScreen-version_buttons-lists .buttons-lists_buttons-list {
+    width: 50%;
+  }
+  main .main_guideline-for-user .guideline-for-user_instruction .instruction_smallScreen-version .smallScreen-version_buttons-lists .buttons-lists_buttons-list .buttons-list_button {
+    font-size: 0.6em;
+  }
+  main .main_guideline-for-user .guideline-for-user_instruction .instruction_smallScreen-version .smallScreen-version_game-controller-photo {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}
 @media (max-width: 406px) {
   main .main_present-block .present-block_text-content .text-content_title {
     font-size: 26px;
@@ -397,5 +495,10 @@
   }
   main .main_promo-banner .promo-banner_text-content .text-content_description {
     font-size: 0.6em;
+  }
+}
+@media (max-width: 350px) {
+  main .main_guideline-for-user .guideline-for-user_title {
+    text-align: center;
   }
 }

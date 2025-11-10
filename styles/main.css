@@ -44,43 +44,28 @@ main .main_present-block .present-block_text-content .text-content_actions {
   justify-content: space-between;
 }
 
-main
-  .main_present-block
-  .present-block_text-content
-  .text-content_actions
-  .actions_navigate-prod-page {
+main .main_present-block .present-block_text-content .text-content_actions .actions_navigate-prod-page {
   width: 50%;
   padding: 1.1em 0;
   font-size: 0.5em;
   line-height: 1.5;
   color: white;
   text-transform: uppercase;
-  background: linear-gradient(
-    to right,
-    var(--second-primary-color) 0%,
-    var(--first-primary-color) 100%
-  );
+  background: linear-gradient(to right,
+      var(--second-primary-color) 0%,
+      var(--first-primary-color) 100%);
   border-radius: 40px;
   border: none;
 }
 
-main
-  .main_present-block
-  .present-block_text-content
-  .text-content_actions
-  .actions_how-to-use {
+main .main_present-block .present-block_text-content .text-content_actions .actions_how-to-use {
   width: 43%;
   display: flex;
   align-items: center;
   gap: 0.5em;
 }
 
-main
-  .main_present-block
-  .present-block_text-content
-  .text-content_actions
-  .actions_how-to-use
-  .how-to-use_navigate-to-video {
+main .main_present-block .present-block_text-content .text-content_actions .actions_how-to-use .how-to-use_navigate-to-video {
   width: 26%;
   max-width: 53px;
   min-width: 48px;
@@ -94,24 +79,13 @@ main
   aspect-ratio: 1 / 1;
 }
 
-main
-  .main_present-block
-  .present-block_text-content
-  .text-content_actions
-  .actions_how-to-use
-  .how-to-use_navigate-to-video
-  img {
+main .main_present-block .present-block_text-content .text-content_actions .actions_how-to-use .how-to-use_navigate-to-video img {
   width: 30%;
   min-width: 15px;
   aspect-ratio: 1 / 1;
 }
 
-main
-  .main_present-block
-  .present-block_text-content
-  .text-content_actions
-  .actions_how-to-use
-  .how-to-use_desc {
+main .main_present-block .present-block_text-content .text-content_actions .actions_how-to-use .how-to-use_desc {
   color: white;
   text-transform: uppercase;
   font-size: 0.4em;
@@ -131,38 +105,26 @@ main .main_present-block .present-block_decorate-img .decorate-img_back-part {
   width: 100%;
 }
 
-main
-  .main_present-block
-  .present-block_decorate-img
-  .decorate-img_back-part
-  .back-part_circle {
+main .main_present-block .present-block_decorate-img .decorate-img_back-part .back-part_circle {
   width: 31.5%;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
-  background: linear-gradient(
-    to right,
-    var(--second-primary-color) 0%,
-    var(--first-primary-color) 100%
-  );
+  background: linear-gradient(to right,
+      var(--second-primary-color) 0%,
+      var(--first-primary-color) 100%);
   position: relative;
   top: -1.6em;
   left: 0;
   margin-left: 65%;
 }
 
-main
-  .main_present-block
-  .present-block_decorate-img
-  .decorate-img_back-part
-  .back-part_text {
+main .main_present-block .present-block_decorate-img .decorate-img_back-part .back-part_text {
   font-size: 7rem;
   font-weight: bold;
   display: block;
-  background: linear-gradient(
-    to right,
-    var(--second-primary-color) 50%,
-    var(--first-primary-color) 100%
-  );
+  background: linear-gradient(to right,
+      var(--second-primary-color) 50%,
+      var(--first-primary-color) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -179,34 +141,19 @@ main .main_present-block .present-block_decorate-img .decorate-img_front-part {
   align-items: start;
 }
 
-main
-  .main_present-block
-  .present-block_decorate-img
-  .decorate-img_front-part
-  .front-part_decorate-text {
+main .main_present-block .present-block_decorate-img .decorate-img_front-part .front-part_decorate-text {
   position: absolute;
   width: 100%;
 }
 
-main
-  .main_present-block
-  .present-block_decorate-img
-  .decorate-img_front-part
-  .front-part_decorate-text
-  .decorate-text_text {
+main .main_present-block .present-block_decorate-img .decorate-img_front-part .front-part_decorate-text .decorate-text_text {
   display: flex;
   align-items: center;
   position: relative;
   width: 100%;
 }
 
-main
-  .main_present-block
-  .present-block_decorate-img
-  .decorate-img_front-part
-  .front-part_decorate-text
-  .decorate-text_text
-  p {
+main .main_present-block .present-block_decorate-img .decorate-img_front-part .front-part_decorate-text .decorate-text_text p {
   display: inline-block;
   width: 18%;
   font-size: 0.45em;
@@ -216,23 +163,12 @@ main
   z-index: 100;
 }
 
-main
-  .main_present-block
-  .present-block_decorate-img
-  .decorate-img_front-part
-  .front-part_decorate-text
-  #first {
+main .main_present-block .present-block_decorate-img .decorate-img_front-part .front-part_decorate-text #first {
   top: 3.2em;
   left: -6em;
 }
 
-main
-  .main_present-block
-  .present-block_decorate-img
-  .decorate-img_front-part
-  .front-part_decorate-text
-  #first
-  .line {
+main .main_present-block .present-block_decorate-img .decorate-img_front-part .front-part_decorate-text #first .line {
   position: relative;
   display: flex;
   align-items: center;
@@ -243,13 +179,7 @@ main
   z-index: 100;
 }
 
-main
-  .main_present-block
-  .present-block_decorate-img
-  .decorate-img_front-part
-  .front-part_decorate-text
-  #first
-  .line::after {
+main .main_present-block .present-block_decorate-img .decorate-img_front-part .front-part_decorate-text #first .line::after {
   content: "";
   position: absolute;
   right: 0;
@@ -263,12 +193,7 @@ main
     0 0 0 15px rgba(154, 255, 250, 0.3);
 }
 
-main
-  .main_present-block
-  .present-block_decorate-img
-  .decorate-img_front-part
-  .front-part_decorate-text
-  #second {
+main .main_present-block .present-block_decorate-img .decorate-img_front-part .front-part_decorate-text #second {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
@@ -278,13 +203,7 @@ main
   position: absolute;
 }
 
-main
-  .main_present-block
-  .present-block_decorate-img
-  .decorate-img_front-part
-  .front-part_decorate-text
-  #second
-  .line {
+main .main_present-block .present-block_decorate-img .decorate-img_front-part .front-part_decorate-text #second .line {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -295,13 +214,7 @@ main
   z-index: 100;
 }
 
-main
-  .main_present-block
-  .present-block_decorate-img
-  .decorate-img_front-part
-  .front-part_decorate-text
-  #second
-  .line::after {
+main .main_present-block .present-block_decorate-img .decorate-img_front-part .front-part_decorate-text #second .line::after {
   content: "";
   position: absolute;
   top: 0;
@@ -315,11 +228,7 @@ main
     0 0 0 15px rgba(154, 255, 250, 0.2);
 }
 
-main
-  .main_present-block
-  .present-block_decorate-img
-  .decorate-img_front-part
-  .front-part_product-photo {
+main .main_present-block .present-block_decorate-img .decorate-img_front-part .front-part_product-photo {
   width: 99%;
   filter: drop-shadow(0 0 250px var(--second-primary-color));
 }
@@ -424,9 +333,7 @@ main
   gap: 1em;
 }
 
-.about-our-quality_text-content
-  .text-content_list-of-qualities
-  .list-of-qualities_quality {
+.about-our-quality_text-content .text-content_list-of-qualities .list-of-qualities_quality {
   font-weight: 300;
   font-size: 0.8em;
   display: inline-flex;
@@ -434,9 +341,7 @@ main
   gap: 1em;
 }
 
-.about-our-quality_text-content
-  .text-content_list-of-qualities
-  .list-of-qualities_quality::before {
+.about-our-quality_text-content .text-content_list-of-qualities .list-of-qualities_quality::before {
   content: "";
   display: block;
   width: 2em;
@@ -471,19 +376,17 @@ main .main_guideline-for-user .guideline-for-user_instruction {
   justify-content: space-between;
 }
 
-main
-  .main_guideline-for-user
-  .guideline-for-user_instruction
-  .instruction_game-controller-photo {
+main .main_guideline-for-user .guideline-for-user_instruction .instruction_smallScreen-version {
+  display: none;
+}
+
+main .main_guideline-for-user .guideline-for-user_instruction .instruction_game-controller-photo {
   margin-top: 2rem;
   width: 52%;
   filter: drop-shadow(0 0 200px var(--second-primary-color));
 }
 
-main
-  .main_guideline-for-user
-  .guideline-for-user_instruction
-  .instruction_buttons-list {
+main .main_guideline-for-user .guideline-for-user_instruction .instruction_buttons-list {
   width: 25%;
   display: flex;
   align-items: start;
@@ -501,11 +404,7 @@ main .main_guideline-for-user .guideline-for-user_instruction .second-column {
   text-align: right;
 }
 
-main
-  .main_guideline-for-user
-  .guideline-for-user_instruction
-  .instruction_buttons-list
-  .buttons-list_button {
+main .main_guideline-for-user .guideline-for-user_instruction .instruction_buttons-list .buttons-list_button {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -515,11 +414,7 @@ main
   line-height: 15px;
 }
 
-main
-  .main_guideline-for-user
-  .guideline-for-user_instruction
-  .second-column
-  .buttons-list_button {
+main .main_guideline-for-user .guideline-for-user_instruction .second-column .buttons-list_button {
   flex-direction: row-reverse;
   align-items: end;
 }
@@ -545,6 +440,7 @@ main
 main .first-column .buttons-list_button .line {
   left: 45%;
 }
+
 main .second-column .buttons-list_button .line {
   right: 45%;
 }
@@ -625,11 +521,9 @@ main .main_promo-banner {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: radial-gradient(
-    circle,
-    var(--first-primary-color),
-    var(--second-primary-color)
-  );
+  background: radial-gradient(circle,
+      var(--first-primary-color),
+      var(--second-primary-color));
   overflow: hidden;
 }
 
@@ -683,10 +577,7 @@ main .main_promo-banner .promo-banner_text-content .text-content_description {
   color: var(--three-primary-color);
 }
 
-main
-  .main_promo-banner
-  .promo-banner_text-content
-  .text-content_navigate-to-prod-list {
+main .main_promo-banner .promo-banner_text-content .text-content_navigate-to-prod-list {
   margin-top: 1.5em;
   color: #242230;
   font-size: 0.55em;
@@ -696,10 +587,7 @@ main
   border-radius: 30px;
 }
 
-main
-  .main_promo-banner
-  .promo-banner_text-content
-  .promo-banner_border-for-text-block {
+main .main_promo-banner .promo-banner_text-content .promo-banner_border-for-text-block {
   position: absolute;
   inset: 0;
   pointer-events: none;
