@@ -5,22 +5,42 @@
   main .main_present-block .present-block_decorate-img .decorate-img_back-part .back-part_text {
     font-size: 4.5em;
   }
-  main .main_guideline-for-user .guideline-for-user_instruction .first-column .buttons-list_button .line:nth-child(0) {
+  .guideline-for-user_instruction .instruction_buttons-list.first-column .buttons-list_button:nth-child(1) .line {
     min-height: 120px;
   }
-  main .main_guideline-for-user .guideline-for-user_instruction .first-column .buttons-list_button .line:nth-child(1) {
+  .guideline-for-user_instruction .instruction_buttons-list.first-column .buttons-list_button:nth-child(2) .line {
     min-height: 75px;
   }
-  main .main_guideline-for-user .guideline-for-user_instruction .first-column .buttons-list_button .line:nth-child(3) {
-    min-height: 28px;
+  .guideline-for-user_instruction .instruction_buttons-list.first-column .buttons-list_button:nth-child(3) .line {
+    min-height: 42px;
   }
-  main .main_guideline-for-user .guideline-for-user_instruction .first-column .buttons-list_button .line:nth-child(5) {
-    min-height: 85px;
+  .guideline-for-user_instruction .instruction_buttons-list.first-column .buttons-list_button:nth-child(5) .line {
+    --h: 100px !important;
+  }
+  .guideline-for-user_instruction .instruction_buttons-list.second-column .buttons-list_button:nth-child(3) .line {
+    top: 15%;
+  }
+  .guideline-for-user_instruction .instruction_buttons-list.second-column .buttons-list_button:nth-child(4) .line {
+    --h: 110px !important;
+  }
+  .guideline-for-user_instruction .instruction_buttons-list.second-column .buttons-list_button:nth-child(5) .line {
+    --h: 164px !important;
   }
 }
 @media (max-width: 1726px) {
   main .main_promo-banner .promo-banner_text-content .promo-banner_border-for-text-block #bottom_right {
     z-index: 10;
+  }
+}
+@media (max-width: 1703px) {
+  main .main_guideline-for-user {
+    width: 88%;
+  }
+  main .main_guideline-for-user .guideline-for-user_instruction .instruction_buttons-list .buttons-list_button p {
+    width: 50%;
+  }
+  main .main_guideline-for-user .guideline-for-user_instruction .instruction_buttons-list .buttons-list_button .line {
+    width: calc(var(--x) + 10%);
   }
 }
 @media (max-width: 1698px) {
@@ -45,6 +65,34 @@
   main .main_promo-banner #rigth {
     position: absolute;
     right: -14.5em;
+  }
+}
+@media (max-width: 1552px) {
+  main .main_guideline-for-user .guideline-for-user_instruction .instruction_buttons-list.first-column .buttons-list_button:nth-child(2) .line {
+    min-height: 66px;
+  }
+  main .main_guideline-for-user .guideline-for-user_instruction .instruction_buttons-list.first-column .buttons-list_button:nth-child(4) .line {
+    --x: 27vw !important;
+  }
+  main .main_guideline-for-user .guideline-for-user_instruction .instruction_buttons-list.first-column .buttons-list_button:nth-child(5) .line {
+    --x: 38vw !important;
+  }
+  main .main_guideline-for-user .guideline-for-user_instruction .instruction_buttons-list.second-column .buttons-list_button:nth-child(1) .line {
+    min-height: 175px;
+  }
+  main .main_guideline-for-user .guideline-for-user_instruction .instruction_buttons-list.second-column .buttons-list_button:nth-child(2) .line {
+    min-height: 40px;
+  }
+  main .main_guideline-for-user .guideline-for-user_instruction .instruction_buttons-list.second-column .buttons-list_button:nth-child(3) .line {
+    top: 20%;
+  }
+  main .main_guideline-for-user .guideline-for-user_instruction .instruction_buttons-list.second-column .buttons-list_button:nth-child(4) .line {
+    min-height: 105px;
+    top: calc((105px - 50%) * -1);
+  }
+  main .main_guideline-for-user .guideline-for-user_instruction .instruction_buttons-list.second-column .buttons-list_button:nth-child(5) .line {
+    top: calc((150px - 50%) * -1);
+    min-height: 150px !important;
   }
 }
 @media (max-width: 1500px) {
@@ -82,6 +130,9 @@
   main .main_about-our-quality .about-our-quality_text-content .text-content_list-of-qualities .list-of-qualities_quality {
     font-size: 0.6em;
   }
+  main .main_guideline-for-user .guideline-for-user_instruction .instruction_buttons-list.second-column .buttons-list_button:nth-child(1) .line {
+    min-height: 165px;
+  }
   main .main_promo-banner .promo-banner_text-content {
     padding: 2.625em 0;
   }
@@ -94,7 +145,27 @@
     right: -14.5em;
   }
 }
+@media (max-width: 1200px) {
+  main .main_guideline-for-user .guideline-for-user_instruction .instruction_buttons-list p {
+    font-size: 14px;
+  }
+  main .main_guideline-for-user .guideline-for-user_instruction .instruction_buttons-list.first-column .buttons-list_button:nth-child(1) .line {
+    min-height: 98px;
+  }
+  main .main_guideline-for-user .guideline-for-user_instruction .instruction_buttons-list.first-column .buttons-list_button:nth-child(2) .line {
+    min-height: 53px;
+  }
+  main .main_guideline-for-user .guideline-for-user_instruction .instruction_buttons-list.second-column .buttons-list_button:nth-child(1) .line {
+    min-height: 140px;
+  }
+}
 @media (max-width: 1140px) {
+  main .main_guideline-for-user .guideline-for-user_instruction .instruction_buttons-list.first-column .buttons-list_button:nth-child(4) .line {
+    top: 30%;
+  }
+  main .main_guideline-for-user .guideline-for-user_instruction .instruction_buttons-list.second-column .buttons-list_button:nth-child(3) .line {
+    top: 10%;
+  }
   main .main_promo-banner #left {
     position: absolute;
     left: -13em;
@@ -150,6 +221,25 @@
   }
   main .main_about-our-quality .about-our-quality_text-content {
     width: 50%;
+  }
+  main .main_guideline-for-user {
+    width: 90%;
+  }
+  main .main_guideline-for-user .guideline-for-user_instruction .instruction_game-controller-photo {
+    width: 57%;
+  }
+  main .main_guideline-for-user .guideline-for-user_instruction .instruction_buttons-list.first-column .buttons-list_button .line {
+    left: 55%;
+  }
+  main .main_guideline-for-user .guideline-for-user_instruction .instruction_buttons-list.first-column .buttons-list_button:nth-child(1) .line {
+    min-height: 88px;
+  }
+  main .main_guideline-for-user .guideline-for-user_instruction .instruction_buttons-list.first-column .buttons-list_button:nth-child(2) .line {
+    min-height: 48px;
+  }
+  main .main_guideline-for-user .guideline-for-user_instruction .instruction_buttons-list.second-column .buttons-list_button:nth-child(1) .line {
+    width: 336px;
+    min-height: 137px;
   }
   main .main_promo-banner .promo-banner_decorate-img {
     width: 62%;

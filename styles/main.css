@@ -596,12 +596,12 @@ main .second-column .buttons-list_button .line {
 .second-column .buttons-list_button .line::after {
   content: "";
   position: absolute;
-  width: 0.6em;
-  height: 0.6em;
+  width: 0.5em;
+  height: 0.5em;
   border-radius: 50%;
   background-color: var(--three-primary-color);
-  box-shadow: 0 0 0 8px rgba(154, 255, 250, 0.5),
-    0 0 0 15px rgba(154, 255, 250, 0.3);
+  box-shadow: 0 0 0 0.4em rgba(154, 255, 250, 0.5),
+    0 0 0 0.7em rgba(154, 255, 250, 0.3);
 }
 
 .buttons-list_button .line[straight_line]::after {

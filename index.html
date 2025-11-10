@@ -1,214 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="color-scheme" content="light dark" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="styles/header.css" />
-  <link rel="stylesheet" href="styles/main.css" />
-  <link rel="stylesheet" href="styles/footer.css" />
-  <link rel="stylesheet" href="styles/adaptive.css" />
-  <link rel="stylesheet" href="styles/footer_adaptive.css" />
-  <link rel="stylesheet" href="styles/header_adaptive.css" />
-  <title>XB Shop</title>
-  <style>
-    :root {
-      --first-primary-color: #b796ff;
-      --second-primary-color: #7a73de;
-      --three-primary-color: #9afffa;
-      --text-gradient: linear-gradient(to right,
-          #dcd6ff 0%,
-          #dcd6ff 35%,
-          var(--first-primary-color) 65%,
-          var(--first-primary-color) 100%);
-      --border: 2px solid var(--three-primary-color);
-      --fs-h1: clamp(32px, 5vw, 72px);
-      --fs-h2: clamp(25px, 4vw, 60px);
-      --fs-text: clamp(16px, 1.2vw, 20.4px);
-    }
-
-    @media (prefers-color-scheme: dark) {
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/adaptive.css" />
+    <link rel="stylesheet" href="styles/footer_adaptive.css" />
+    <link rel="stylesheet" href="styles/header_adaptive.css" />
+    <title>XB Shop</title>
+    <style>
       :root {
         --first-primary-color: #b796ff;
         --second-primary-color: #7a73de;
         --three-primary-color: #9afffa;
-        --text-gradient: linear-gradient(to right,
+        --text-gradient: linear-gradient(
+          to right,
+          #dcd6ff 0%,
+          #dcd6ff 35%,
+          var(--first-primary-color) 65%,
+          var(--first-primary-color) 100%
+        );
+        --border: 2px solid var(--three-primary-color);
+        --fs-h1: clamp(32px, 5vw, 72px);
+        --fs-h2: clamp(25px, 4vw, 60px);
+        --fs-text: clamp(16px, 1.2vw, 20.4px);
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --first-primary-color: #b796ff;
+          --second-primary-color: #7a73de;
+          --three-primary-color: #9afffa;
+          --text-gradient: linear-gradient(
+            to right,
             #dcd6ff 0%,
             #dcd6ff 35%,
             var(--first-primary-color) 65%,
-            var(--first-primary-color) 100%);
-        --border: 2px solid var(--three-primary-color);
+            var(--first-primary-color) 100%
+          );
+          --border: 2px solid var(--three-primary-color);
+        }
       }
-    }
 
-    html {
-      font-size: clamp(16px, 1rem + 1vw, 30px);
-    }
+      html {
+        font-size: clamp(16px, 1rem + 1vw, 30px);
+      }
 
-    body {
-      background-color: #242230;
-      font-family: "Montserrat", sans-serif;
-      margin: 0;
-      overflow-x: hidden;
-    }
+      body {
+        background-color: #242230;
+        font-family: "Montserrat", sans-serif;
+        margin: 0;
+        overflow-x: hidden;
+      }
 
-    button,
-    a {
-      cursor: pointer;
-    }
+      button,
+      a {
+        cursor: pointer;
+      }
 
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
 
-    h1 {
-      font-size: var(--fs-h1);
-      font-weight: bold;
-    }
+      h1 {
+        font-size: var(--fs-h1);
+        font-weight: bold;
+      }
 
-    h2 {
-      font-size: var(--fs-h2);
-      font-weight: bold;
-    }
+      h2 {
+        font-size: var(--fs-h2);
+        font-weight: bold;
+      }
 
-    p {
-      margin: 0;
-      line-height: 1.5;
-      font-size: var(--fs-text);
-      font-weight: 300;
-    }
-  </style>
-</head>
+      p {
+        margin: 0;
+        line-height: 1.5;
+        font-size: var(--fs-text);
+        font-weight: 300;
+      }
+    </style>
+  </head>
 
-<body>
-  <header>
-    <div class="header_content">
-      <div class="content_logo"><span>XB</span> Shop</div>
+  <body>
+    <header>
+      <div class="header_content">
+        <div class="content_logo"><span>XB</span> Shop</div>
 
-      <nav class="content_navigate">
-        <p>Products</p>
-        <p>Categories</p>
-        <p>Trending</p>
-        <p>Popular</p>
-      </nav>
+        <nav class="content_navigate">
+          <p>Products</p>
+          <p>Categories</p>
+          <p>Trending</p>
+          <p>Popular</p>
+        </nav>
 
-      <div class="content_actions">
-        <img src="imgs/icons/search.svg" alt="search" class="actions_action" />
-        <img src="imgs/icons/shopping-cart.png" alt="cart" class="actions_action" />
-        <button class="actions_sign-up">sign up</button>
+        <div class="content_actions">
+          <img
+            src="imgs/icons/search.svg"
+            alt="search"
+            class="actions_action"
+          />
+          <img
+            src="imgs/icons/shopping-cart.png"
+            alt="cart"
+            class="actions_action"
+          />
+          <button class="actions_sign-up">sign up</button>
+        </div>
+
+        <div class="content_menu-burger">
+          <span></span><span></span><span></span>
+        </div>
       </div>
+    </header>
 
-      <div class="content_menu-burger">
-        <span></span><span></span><span></span>
-      </div>
-    </div>
-  </header>
+    <main>
+      <div class="main_present-block">
+        <div class="present-block_text-content">
+          <h1 class="text-content_title">Keep up with the era</h1>
+          <p class="text-content_desc">
+            Change your gaming experience to the next level with our product
+          </p>
 
-  <main>
-    <div class="main_present-block">
-      <div class="present-block_text-content">
-        <h1 class="text-content_title">Keep up with the era</h1>
-        <p class="text-content_desc">
-          Change your gaming experience to the next level with our product
-        </p>
-
-        <div class="text-content_actions">
-          <button class="actions_navigate-prod-page">
-            70% from microsoft
-          </button>
-          <div class="actions_how-to-use">
-            <button class="how-to-use_navigate-to-video">
-              <img src="imgs/icons/play.svg" alt="play video" />
+          <div class="text-content_actions">
+            <button class="actions_navigate-prod-page">
+              70% from microsoft
             </button>
-            <p class="how-to-use_desc">how to use</p>
+            <div class="actions_how-to-use">
+              <button class="how-to-use_navigate-to-video">
+                <img src="imgs/icons/play.svg" alt="play video" />
+              </button>
+              <p class="how-to-use_desc">how to use</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="present-block_decorate-img">
+          <div class="decorate-img_back-part">
+            <div class="back-part_circle"></div>
+            <div class="back-part_text">1708</div>
+          </div>
+
+          <div class="decorate-img_front-part">
+            <div class="front-part_decorate-text">
+              <div class="decorate-text_text" id="first">
+                <p>Compatible with Controller</p>
+                <div class="line"></div>
+              </div>
+
+              <div class="decorate-text_text" id="second">
+                <p>Made of High Quality Silicone</p>
+                <div class="line"></div>
+              </div>
+            </div>
+
+            <img
+              src="imgs/product-photo.png"
+              alt="product photo"
+              class="front-part_product-photo"
+            />
           </div>
         </div>
       </div>
 
-      <div class="present-block_decorate-img">
-        <div class="decorate-img_back-part">
-          <div class="back-part_circle"></div>
-          <div class="back-part_text">1708</div>
-        </div>
+      <div class="main_swiper">
+        <button class="swiper_swipe-slide" id="left">
+          <img src="imgs/icons/arrow.svg" alt="swipe-to-left" />
+        </button>
 
-        <div class="decorate-img_front-part">
-          <div class="front-part_decorate-text">
-            <div class="decorate-text_text" id="first">
-              <p>Compatible with Controller</p>
-              <div class="line"></div>
-            </div>
-
-            <div class="decorate-text_text" id="second">
-              <p>Made of High Quality Silicone</p>
-              <div class="line"></div>
-            </div>
-          </div>
-
-          <img src="imgs/product-photo.png" alt="product photo" class="front-part_product-photo" />
-        </div>
-      </div>
-    </div>
-
-    <div class="main_swiper">
-      <button class="swiper_swipe-slide" id="left">
-        <img src="imgs/icons/arrow.svg" alt="swipe-to-left" />
-      </button>
-
-      <ul class="slides">
-        <li class="slide"></li>
-        <li class="slide" id="active"></li>
-        <li class="slide"></li>
-      </ul>
-
-      <button class="swiper_swipe-slide" id="rifth">
-        <img src="imgs/icons/arrow.svg" alt="swipe-to-rigth" />
-      </button>
-    </div>
-
-    <div class="main_about-our-quality">
-      <img src="imgs/img-for-qual-block.png" alt="img-for-qual-block" class="decorate-for-qual-block" />
-
-      <div class="about-our-quality_text-content">
-        <h2 class="text-content_title">Made with quality</h2>
-        <p class="text-content_desc">
-          Your Xbox controller isn’t just limited to your console, with
-          integrated Bluetooth supporting iOS, Android, and PCs. We recommend
-          picking up a phone clip, though.
-        </p>
-
-        <ul class="text-content_list-of-qualities">
-          <li class="list-of-qualities_quality">
-            Great, familiar in-hand feel
-          </li>
-          <li class="list-of-qualities_quality">
-            Works with Xbox, iOS, Android, PC
-          </li>
-          <li class="list-of-qualities_quality">
-            Supports Xbox controller clips
-          </li>
-          <li class="list-of-qualities_quality">
-            Easy to use for any environment
-          </li>
+        <ul class="slides">
+          <li class="slide"></li>
+          <li class="slide" id="active"></li>
+          <li class="slide"></li>
         </ul>
-      </div>
-    </div>
 
-    <div class="main_guideline-for-user">
-      <h2 class="guideline-for-user_title">Using quideline for user</h2>
+        <button class="swiper_swipe-slide" id="rifth">
+          <img src="imgs/icons/arrow.svg" alt="swipe-to-rigth" />
+        </button>
+      </div>
+
+      <div class="main_about-our-quality">
+        <img
+          src="imgs/img-for-qual-block.png"
+          alt="img-for-qual-block"
+          class="decorate-for-qual-block"
+        />
+
+        <div class="about-our-quality_text-content">
+          <h2 class="text-content_title">Made with quality</h2>
+          <p class="text-content_desc">
+            Your Xbox controller isn’t just limited to your console, with
+            integrated Bluetooth supporting iOS, Android, and PCs. We recommend
+            picking up a phone clip, though.
+          </p>
+
+          <ul class="text-content_list-of-qualities">
+            <li class="list-of-qualities_quality">
+              Great, familiar in-hand feel
+            </li>
+            <li class="list-of-qualities_quality">
+              Works with Xbox, iOS, Android, PC
+            </li>
+            <li class="list-of-qualities_quality">
+              Supports Xbox controller clips
+            </li>
+            <li class="list-of-qualities_quality">
+              Easy to use for any environment
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="main_guideline-for-user">
+        <h2 class="guideline-for-user_title">Using quideline for user</h2>
 
       <div class="guideline-for-user_instruction">
         <ul class="instruction_buttons-list first-column">
           <li class="buttons-list_button">
             <p class="button_text">Switch Key / Return Home</p>
-            <div class="line" data-x="32.3vw" data-h="125px" line_bottom_left></div>
+            <div class="line" data-x="32vw" data-h="125px" line_bottom_left></div>
           </li>
 
           <li class="buttons-list_button">
@@ -232,7 +252,10 @@
           </li>
         </ul>
 
-        <img src="imgs/product-photo.png" class="instruction_game-controller-photo" />
+          <img
+            src="imgs/product-photo.png"
+            class="instruction_game-controller-photo"
+          />
 
         <ul class="instruction_buttons-list second-column">
           <li class="buttons-list_button">
@@ -267,140 +290,155 @@
           <img src="imgs/icons/arrow.svg" alt="swipe-to-left" />
         </button>
 
-        <ul class="slides">
-          <li class="slide"></li>
-          <li class="slide" id="active"></li>
-          <li class="slide"></li>
-        </ul>
-
-        <button class="swiper_swipe-slide" id="rifth">
-          <img src="imgs/icons/arrow.svg" alt="swipe-to-rigth" />
-        </button>
-      </div>
-    </div>
-
-    <section class="main_promo-banner">
-      <img src="imgs/product-photo.png" alt="game controller photo" class="promo-banner_decorate-img" id="left" />
-
-      <div class="promo-banner_text-content">
-        <div class="promo-banner_border-for-text-block">
-          <div class="border-for-text-block_part-border" id="top_left"></div>
-          <div class="border-for-text-block_part-border" id="top_right"></div>
-          <div class="border-for-text-block_part-border" id="bottom_left"></div>
-          <div class="border-for-text-block_part-border" id="bottom_right"></div>
-        </div>
-
-        <div class="text-content_text">
-          <p class="text-content_subtitle">XB Shop Exclusive</p>
-          <h2 class="text-content_title">Sale by XB Shop</h2>
-          <p class="text-content_description">ALL PRICES UP TO -45% OFF</p>
-          <a class="text-content_navigate-to-prod-list">SHOP NOW</a>
-        </div>
-      </div>
-
-      <img src="imgs/product-photo.png" alt="game controller photo" class="promo-banner_decorate-img" id="rigth" />
-    </section>
-  </main>
-
-  <footer>
-    <div class="footer_logo">
-      <div class="logo_name">
-        <p><span>XB</span> Shop</p>
-      </div>
-    </div>
-
-    <div class="footer_content">
-      <div class="content_top">
-        <section class="content_about-us">
-          <h5 class="about-us_title">About</h5>
-          <p class="about-us_desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
-            eos, a quibusdam incidunt esseipsa?
-          </p>
-
-          <ul class="about-us_social-media">
-            <li class="social-media-item">
-              <img src="imgs/icons/twitter.svg" alt="twiter" />
-            </li>
-
-            <li class="social-media-item">
-              <img src="imgs/icons/twitter.svg" alt="twiter" />
-            </li>
-
-            <li class="social-media-item">
-              <img src="imgs/icons/instagram.svg" alt="instagram" />
-            </li>
-
-            <li class="social-media-item">
-              <img src="imgs/icons/snapchat.svg" alt="snapchat" />
-            </li>
+          <ul class="slides">
+            <li class="slide"></li>
+            <li class="slide" id="active"></li>
+            <li class="slide"></li>
           </ul>
-        </section>
 
-        <nav class="footer_navigate">
-          <div class="navigate_links">
-            <h5 class="links_title-list">Customer Service</h5>
-            <ul class="links_items">
-              <li class="items_item"><a href="#">Track your Order</a></li>
-              <li class="items_item"><a href="#">Shipping</a></li>
-              <li class="items_item"><a href="#">Returns & Exchanges</a></li>
-              <li class="items_item"><a href="#">Gift Cards</a></li>
-            </ul>
-          </div>
-
-          <div class="navigate_links">
-            <h5 class="links_title-list">Resources</h5>
-            <ul class="links_items">
-              <li class="items_item"><a href="#">Find Your Size</a></li>
-              <li class="items_item"><a href="#">Handling & Care</a></li>
-              <li class="items_item"><a href="#">Face Shapes</a></li>
-              <li class="items_item"><a href="#">Blogs</a></li>
-            </ul>
-          </div>
-
-          <div class="navigate_links">
-            <h5 class="links_title-list">Support</h5>
-            <ul class="links_items">
-              <li class="items_item"><a href="#">Terms of Service</a></li>
-              <li class="items_item"><a href="#">Privacy Policy</a></li>
-              <li class="items_item"><a href="#">Contact Us</a></li>
-              <li class="items_item"><a href="#">FAQs</a></li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-
-      <div class="content_bottom">
-        <div class="bottom_content">
-          <p class="bottom_content_legal">
-            Copyrigth © 2021 unique. All rigth reserved
-          </p>
-
-          <ul class="bottom_content_payment-methods">
-            <li class="payment-methods_method">
-              <img src="imgs/icons/mastercard.svg" alt="payment-method" />
-            </li>
-            <li class="payment-methods_method">
-              <img src="imgs/icons/apple-pay.svg" alt="payment-method" />
-            </li>
-            <li class="payment-methods_method">
-              <img src="imgs/icons/paypal.svg" alt="payment-method" />
-            </li>
-            <li class="payment-methods_method">
-              <img src="imgs/icons/amazon-pay.svg" alt="payment-method" />
-            </li>
-          </ul>
+          <button class="swiper_swipe-slide" id="rifth">
+            <img src="imgs/icons/arrow.svg" alt="swipe-to-rigth" />
+          </button>
         </div>
       </div>
-    </div>
-  </footer>
 
-  <script>
-    document.querySelectorAll(".line").forEach((el) => {
-      if (el.dataset.x) el.style.setProperty("--x", el.dataset.x);
-      if (el.dataset.h) el.style.setProperty("--h", el.dataset.h);
-    });
-  </script>
-</body>
+      <section class="main_promo-banner">
+        <img
+          src="imgs/product-photo.png"
+          alt="game controller photo"
+          class="promo-banner_decorate-img"
+          id="left"
+        />
 
+        <div class="promo-banner_text-content">
+          <div class="promo-banner_border-for-text-block">
+            <div class="border-for-text-block_part-border" id="top_left"></div>
+            <div class="border-for-text-block_part-border" id="top_right"></div>
+            <div
+              class="border-for-text-block_part-border"
+              id="bottom_left"
+            ></div>
+            <div
+              class="border-for-text-block_part-border"
+              id="bottom_right"
+            ></div>
+          </div>
+
+          <div class="text-content_text">
+            <p class="text-content_subtitle">XB Shop Exclusive</p>
+            <h2 class="text-content_title">Sale by XB Shop</h2>
+            <p class="text-content_description">ALL PRICES UP TO -45% OFF</p>
+            <a class="text-content_navigate-to-prod-list">SHOP NOW</a>
+          </div>
+        </div>
+
+        <img
+          src="imgs/product-photo.png"
+          alt="game controller photo"
+          class="promo-banner_decorate-img"
+          id="rigth"
+        />
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer_logo">
+        <div class="logo_name">
+          <p><span>XB</span> Shop</p>
+        </div>
+      </div>
+
+      <div class="footer_content">
+        <div class="content_top">
+          <section class="content_about-us">
+            <h5 class="about-us_title">About</h5>
+            <p class="about-us_desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+              eos, a quibusdam incidunt esseipsa?
+            </p>
+
+            <ul class="about-us_social-media">
+              <li class="social-media-item">
+                <img src="imgs/icons/twitter.svg" alt="twiter" />
+              </li>
+
+              <li class="social-media-item">
+                <img src="imgs/icons/twitter.svg" alt="twiter" />
+              </li>
+
+              <li class="social-media-item">
+                <img src="imgs/icons/instagram.svg" alt="instagram" />
+              </li>
+
+              <li class="social-media-item">
+                <img src="imgs/icons/snapchat.svg" alt="snapchat" />
+              </li>
+            </ul>
+          </section>
+
+          <nav class="footer_navigate">
+            <div class="navigate_links">
+              <h5 class="links_title-list">Customer Service</h5>
+              <ul class="links_items">
+                <li class="items_item"><a href="#">Track your Order</a></li>
+                <li class="items_item"><a href="#">Shipping</a></li>
+                <li class="items_item"><a href="#">Returns & Exchanges</a></li>
+                <li class="items_item"><a href="#">Gift Cards</a></li>
+              </ul>
+            </div>
+
+            <div class="navigate_links">
+              <h5 class="links_title-list">Resources</h5>
+              <ul class="links_items">
+                <li class="items_item"><a href="#">Find Your Size</a></li>
+                <li class="items_item"><a href="#">Handling & Care</a></li>
+                <li class="items_item"><a href="#">Face Shapes</a></li>
+                <li class="items_item"><a href="#">Blogs</a></li>
+              </ul>
+            </div>
+
+            <div class="navigate_links">
+              <h5 class="links_title-list">Support</h5>
+              <ul class="links_items">
+                <li class="items_item"><a href="#">Terms of Service</a></li>
+                <li class="items_item"><a href="#">Privacy Policy</a></li>
+                <li class="items_item"><a href="#">Contact Us</a></li>
+                <li class="items_item"><a href="#">FAQs</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+
+        <div class="content_bottom">
+          <div class="bottom_content">
+            <p class="bottom_content_legal">
+              Copyrigth © 2021 unique. All rigth reserved
+            </p>
+
+            <ul class="bottom_content_payment-methods">
+              <li class="payment-methods_method">
+                <img src="imgs/icons/mastercard.svg" alt="payment-method" />
+              </li>
+              <li class="payment-methods_method">
+                <img src="imgs/icons/apple-pay.svg" alt="payment-method" />
+              </li>
+              <li class="payment-methods_method">
+                <img src="imgs/icons/paypal.svg" alt="payment-method" />
+              </li>
+              <li class="payment-methods_method">
+                <img src="imgs/icons/amazon-pay.svg" alt="payment-method" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.querySelectorAll(".line").forEach((el) => {
+        if (el.dataset.x) el.style.setProperty("--x", el.dataset.x);
+        if (el.dataset.h) el.style.setProperty("--h", el.dataset.h);
+      });
+    </script>
+  </body>
 </html>

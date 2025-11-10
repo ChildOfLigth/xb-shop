@@ -13,33 +13,37 @@
         }
       }
     }
+  }
 
-    .main_guideline-for-user {
-      .guideline-for-user_instruction {
-        .first-column {
-          .buttons-list_button {
-            .line:nth-child(0) {
-              min-height: 120px;
-            }
+  .guideline-for-user_instruction {
+    .instruction_buttons-list.first-column {
+      .buttons-list_button:nth-child(1) .line {
+        min-height: 120px;
+      }
+      .buttons-list_button:nth-child(2) .line {
+        min-height: 75px;
+      }
+      .buttons-list_button:nth-child(3) .line {
+        min-height: 42px;
+      }
+      .buttons-list_button:nth-child(5) .line {
+        --h: 100px !important;
+      }
+    }
 
-            .line:nth-child(1) {
-              min-height: 75px;
-            }
-
-            .line:nth-child(3) {
-              min-height: 28px;
-            }
-
-            .line:nth-child(5) {
-              min-height: 85px;
-            }
-          }
-        }
+    .instruction_buttons-list.second-column {
+      .buttons-list_button:nth-child(3) .line {
+        top: 15%;
+      }
+      .buttons-list_button:nth-child(4) .line {
+        --h: 110px !important;
+      }
+      .buttons-list_button:nth-child(5) .line {
+        --h: 164px !important;
       }
     }
   }
 }
-
 
 @media (max-width: 1726px) {
   main {
@@ -48,6 +52,27 @@
         .promo-banner_border-for-text-block {
           #bottom_right {
             z-index: 10;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1703px) {
+  main {
+    .main_guideline-for-user {
+      width: 88%;
+      .guideline-for-user_instruction {
+        .instruction_buttons-list {
+          .buttons-list_button {
+            p {
+              width: 50%;
+            }
+
+            .line {
+              width: calc(var(--x) + 10%);
+            }
           }
         }
       }
@@ -92,6 +117,48 @@
       #rigth {
         position: absolute;
         right: -14.5em;
+      }
+    }
+  }
+}
+
+@media (max-width: 1552px) {
+  main {
+    .main_guideline-for-user {
+      .guideline-for-user_instruction {
+        .instruction_buttons-list.first-column {
+          .buttons-list_button:nth-child(2) .line {
+            min-height: 66px;
+          }
+          .buttons-list_button:nth-child(4) .line {
+            --x: 27vw !important;
+          }
+          .buttons-list_button:nth-child(5) .line {
+            --x: 38vw !important;
+          }
+        }
+
+        .instruction_buttons-list.second-column {
+          .buttons-list_button:nth-child(1) .line {
+            min-height: 175px;
+          }
+
+          .buttons-list_button:nth-child(2) .line {
+            min-height: 40px;
+          }
+
+          .buttons-list_button:nth-child(3) .line {
+            top: 20%;
+          }
+          .buttons-list_button:nth-child(4) .line {
+            min-height: 105px;
+            top: calc((105px - 50%) * -1);
+          }
+          .buttons-list_button:nth-child(5) .line {
+            top: calc((150px - 50%) * -1);
+            min-height: 150px !important;
+          }
+        }
       }
     }
   }
@@ -169,6 +236,16 @@
       }
     }
 
+    .main_guideline-for-user {
+      .guideline-for-user_instruction {
+        .instruction_buttons-list.second-column {
+          .buttons-list_button:nth-child(1) .line {
+            min-height: 165px;
+          }
+        }
+      }
+    }
+
     .main_promo-banner {
       .promo-banner_text-content {
         padding: calc(3.5em / 2 * 1.5) 0;
@@ -187,8 +264,54 @@
   }
 }
 
+@media (max-width: 1200px) {
+  main {
+    .main_guideline-for-user {
+      .guideline-for-user_instruction {
+        .instruction_buttons-list {
+          p {
+            font-size: 14px;
+          }
+        }
+
+        .instruction_buttons-list.first-column {
+          .buttons-list_button:nth-child(1) .line {
+            min-height: 98px;
+          }
+
+          .buttons-list_button:nth-child(2) .line {
+            min-height: 53px;
+          }
+        }
+
+        .instruction_buttons-list.second-column {
+          .buttons-list_button:nth-child(1) .line {
+            min-height: 140px;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 1140px) {
   main {
+    .main_guideline-for-user {
+      .guideline-for-user_instruction {
+        .instruction_buttons-list.first-column {
+          .buttons-list_button:nth-child(4) .line {
+            top: 30%;
+          }
+        }
+
+        .instruction_buttons-list.second-column {
+          .buttons-list_button:nth-child(3) .line {
+            top: 10%;
+          }
+        }
+      }
+    }
+
     .main_promo-banner {
       #left {
         position: absolute;
@@ -260,6 +383,35 @@
 
       .about-our-quality_text-content {
         width: 50%;
+      }
+    }
+
+    .main_guideline-for-user {
+      width: 90%;
+      .guideline-for-user_instruction {
+        .instruction_game-controller-photo {
+          width: 57%;
+        }
+
+        .instruction_buttons-list.first-column {
+          .buttons-list_button .line {
+            left: 55%;
+          }
+          .buttons-list_button:nth-child(1) .line {
+            min-height: 88px;
+          }
+
+          .buttons-list_button:nth-child(2) .line {
+            min-height: 48px;
+          }
+        }
+
+        .instruction_buttons-list.second-column {
+          .buttons-list_button:nth-child(1) .line {
+            width: 336px;
+            min-height: 137px;
+          }
+        }
       }
     }
 
@@ -468,7 +620,8 @@
 @media (max-width: 488px) {
   main {
     .main_promo-banner {
-      .promo-banner_text-content {}
+      .promo-banner_text-content {
+      }
     }
   }
 }
