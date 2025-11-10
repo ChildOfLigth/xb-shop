@@ -307,6 +307,8 @@
   }
   main .main_guideline-for-user .guideline-for-user_instruction .instruction_smallScreen-version .smallScreen-version_game-controller-photo {
     width: 80%;
+    -webkit-filter: drop-shadow(0 0 150px var(--second-primary-color));
+            filter: drop-shadow(0 0 150px var(--second-primary-color));
   }
 }
 @media (max-width: 918px) {
@@ -479,7 +481,7 @@
     font-size: 0.6em;
   }
   main .main_guideline-for-user .guideline-for-user_instruction .instruction_smallScreen-version .smallScreen-version_game-controller-photo {
-    width: 90%;
+    width: 95%;
     margin-bottom: 20px;
   }
 }

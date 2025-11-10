@@ -485,6 +485,7 @@
 
           .smallScreen-version_game-controller-photo {
             width: 80%;
+            filter: drop-shadow(0 0 150px var(--second-primary-color));
           }
         }
       }
@@ -740,7 +741,7 @@
           }
 
           .smallScreen-version_game-controller-photo {
-            width: 90%;
+            width: 95%;
             margin-bottom: 20px;
           }
         }
